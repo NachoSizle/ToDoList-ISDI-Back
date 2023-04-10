@@ -1,0 +1,31 @@
+{
+  "name": "todo-list-back",
+  "version": "1.0.0",
+  "description": "Backend from ToDoList ISDI Coders",
+  "main": "index.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "axios": "^0.21.1",
+    "body-parser": "^1.18.2",
+    "cors": "^2.8.5",
+    "express": "^4.16.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NachoSizle/ToDoList-ISDI-Back.git"
+  },
+  "keywords": [
+    "NodeJS",
+    "Mongo",
+    "Express"
+  ],
+  "author": "NachoSizle",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NachoSizle/ToDoList-ISDI-Back/issues"
+  },
+  "homepage": "https://github.com/NachoSizle/ToDoList-ISDI-Back#readme"
+}

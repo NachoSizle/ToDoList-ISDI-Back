@@ -24,7 +24,7 @@ const GET_ROUTES: Array<Route> = [
 
 const POST_ROUTES: Array<Route> = [
   {
-    path: '/:id',
+    path: '/',
     method: RouteMethod.POST,
     action: POST.create,
   }

@@ -1,14 +1,13 @@
-import { Document, Model } from "mongoose";
+import { model, Schema } from "mongoose";
 
-export interface IToDo {
+export interface ToDo {
   title: string;
   completed: boolean;
 }
 
-export interface IToDoModel extends Model<ToDoDocument> {
-  findCompleted(): Promise<ToDoDocument[]>;
-}
+const toDoSchema = new Schema({
+  title: { type: String, required: true },
+  completed: { type: Boolean, default: false },
+});
 
-export interface ToDoDocument extends IToDo, Document {
-  markAsCompleted(): Promise<ToDoDocument>;
-}
+export default model<ToDo>("ToDo", toDoSchema);

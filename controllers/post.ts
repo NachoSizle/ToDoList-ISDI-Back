@@ -1,5 +1,5 @@
 import { Request, Response } from 'express'
-import { ToDoModel } from '../models/ToDo';
+import ToDoModel from '../models/mongo';
 
 const create = async (req: Request, res: Response) => {
   const todo = new ToDoModel(req.body);

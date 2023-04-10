@@ -1,5 +1,5 @@
 import { Request, Response } from 'express'
-import { ToDoModel } from '../models/ToDo';
+import ToDoModel from '../models/mongo';
 
 const deleteById = async (req: Request, res: Response) => {
   const { params: { id }} = req;

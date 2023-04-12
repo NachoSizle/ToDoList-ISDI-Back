@@ -4,6 +4,7 @@
   "description": "Backend from ToDoList ISDI Coders",
   "main": "index.js",
   "scripts": {
+    "build": "tsc",
     "start": "ts-node index.ts",
     "test": "jest"
   },
@@ -15,7 +16,9 @@
     "express": "4.18.2",
     "mongoose": "7.0.3",
     "supertest": "^6.3.3",
-    "ts-node": "^10.9.1"
+    "ts-node": "^10.9.1",
+    "tsc": "^2.0.4",
+    "typescript": "^5.0.4"
   },
   "repository": {
     "type": "git",

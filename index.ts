@@ -17,6 +17,8 @@ app.use(
   })
 )
 
+require("dotenv").config();
+
 const __init__ = () => {
   routes.forEach((route: Route) => {
     app[route.method](route.path, route.action)
@@ -25,6 +27,6 @@ const __init__ = () => {
   app.listen(port, () => console.log('Server is listening, port ' + port))
 }
 
-mongoose.connect("mongodb+srv://nachosizle:Relee9vwvLK61UVy@cluster0.mco1afu.mongodb.net/test", { useNewUrlParser: true, useUnifiedTopology: true })
+mongoose.connect(process.env.MONGODB_URI, { useNewUrlParser: true, useUnifiedTopology: true })
   .then(() => __init__())
   .catch((err: any) => console.error("Error at connect to MongoDB: ", err));
